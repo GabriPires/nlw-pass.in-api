@@ -1,10 +1,11 @@
 {
   "name": "pass.in",
   "version": "1.0.0",
-  "description": "O pass.in é uma aplicação de gestão de participantes em eventos presenciais.",
+  "description": "O pass.in é uma aplicação de gestão de participantes em eventos presenciais. Desenvolvido durante o NLW Unite",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch --env-file .env src/server.ts"
+    "dev": "tsx watch --env-file .env src/server.ts",
+    "lint:fix": "eslint --fix src --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "devDependencies": {
     "@gabpires/eslint-config": "^1.2.0",
     "@types/node": "^20.12.3",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
     "prisma": "^5.12.0",
     "tsx": "^4.7.1",
     "typescript": "^5.4.3"
@@ -19,6 +21,7 @@
   "dependencies": {
     "@prisma/client": "^5.12.0",
     "fastify": "^4.26.2",
+    "fastify-type-provider-zod": "^1.1.9",
     "zod": "^3.22.4"
   }
 }

@@ -1,3 +1,7 @@
 {
-  "extends": ["@gabpires/eslint-config/node"]
+  "extends": ["@gabpires/eslint-config/node"],
+  "plugins": ["simple-import-sort"],
+  "rules": {
+    "simple-import-sort/imports": "error"
+  }
 }
