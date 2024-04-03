@@ -2,7 +2,17 @@ POST http://localhost:3000/events
 Content-Type: application/json
 
 {
-    "title": "NLW Unite",
-    "details": "Evento de tecnologia",
-    "maximumAttendees": 100
+    "title": "Novo evento 2",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3000/events/770f14b4-73c8-49c8-ba11-e17f861aa2f8/attendees
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johndoe@email.com"
 }
